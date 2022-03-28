@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.tabs {
+  display: flex;
+  padding: 0.4rem;
+  margin-bottom: 0;
+  width: 100%;
+  overflow-x: scroll;
+  margin-top: 0.5rem;
+  margin-bottom: -1.7rem;
+}
+
+::-webkit-scrollbar { width: 0; }
+
+hr {
+  border-color: black;
+  border-width: 0.1rem;
+}
+
+.tab {
+  border-bottom: none !important;
+  font-size: normal;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 0.1rem;
+}
+
+.tab-head, .tab-tail { display: inline; }
+
+.tab-head {
+  width: 7rem;
+}
+
+.tab-head, .tab-tail {
+  border: 2px solid black;
+  padding: 0.3rem;
+  transition: 0.1s ease-in-out;
+}
+
+.tab-head:hover, .tab-tail:hover {
+  background-color: rgba(0, 0, 0, 0.151);
+  border-radius: 0.5rem;
+}
+
+
+.nosel {
+  user-select: none;
+}
